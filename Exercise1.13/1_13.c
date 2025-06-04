@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]){
     int wordCaracter[10];
-    int caracter, count, state, wordCount, words;
+    int arrayPosition, count, state, wordLength, wordsCount;
     
     for (int value = 0; value < 10; ++value) {
         wordCaracter[value] = 0;
@@ -15,17 +15,17 @@ int main(int argc, char *argv[]){
     while((count = getchar()) != EOF){
         if(count == ' ' || count == '\n' || count == '\t'){
             if (state == IN) {
-                wordCaracter[caracter] = wordCount;
-                words++;
+                wordCaracter[arrayPosition] = wordLength;
+                wordsCount++;
             }
-            wordCount = 0;
-            caracter++;
+            wordLength = 0;
+            arrayPosition++;
 
             state = OUT;
         }
         else {
             state = IN;
-            wordCount++;
+            wordLength++;
         }
     }
 
@@ -33,6 +33,6 @@ int main(int argc, char *argv[]){
     for (int value = 0; value < 10; ++value) {
         printf(" %d", wordCaracter[value]);
     }
-    printf(" Words: %d \n", words);
+    printf(" Words: %d \n", wordsCount);
 }
 
