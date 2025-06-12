@@ -7,6 +7,6 @@ int main(int argc, char *argv[]){
 
     }
     printf("%.0f\n", ng);
-        
+
 }
 
