@@ -8,7 +8,7 @@ int main(int argc, char *argv[]){
     while ((caracter = getchar()) != EOF) {
         if(caracter == '\n'){
             ++lines;
-        }   
+        }
     }
-    printf("%d\n", lines);
+    printf("Lines: %d\n", lines);
 }

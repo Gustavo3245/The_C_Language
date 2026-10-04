@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-#define LOWER 0
-#define UPPER 300
-#define STEP 20
+enum conversion { LOWER = 0, STEP = 20, UPPER = 300};
 
 int main(int argc, char *argv[]){
     int fahr;

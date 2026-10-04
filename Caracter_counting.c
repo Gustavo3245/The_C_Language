@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-    double ng;
+    int count;
     
-    for(ng = 0; getchar() != EOF; ++ng){
-
-    }
-    printf("%.0f\n", ng);
-
+    for(count = 0; getchar() != EOF; count++); // End of Line
+    printf("\nCount: %d \n", count);
 }
 

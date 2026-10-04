@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
+    int character;
 
-    int c;
-    
-    while((c = getchar()) != EOF){
-        putchar(c);
+    while ((character = getchar()) != EOF) { // End of Line
+        putchar(character);
     }
 }

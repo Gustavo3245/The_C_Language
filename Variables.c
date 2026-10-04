@@ -2,6 +2,7 @@
 
 /* print Fahrenheit_Celsius table
    for fahr = 0, 20, ..., 300; FLoating-Point Version  */
+
 int main(int argc, char *argv[]){
     float fahr, celsius;
     float lower, upper, step;
